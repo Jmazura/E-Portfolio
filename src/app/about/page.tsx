@@ -48,7 +48,7 @@ export default function AboutPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg leading-relaxed text-gray-300"
         >
-          From sleek portfolios to survival games and productivity tools, I enjoy building things that feel good to use. Whether it's Unity, Godot, or React—I bring ideas to life with focus and flair.
+          From sleek portfolios to survival games and productivity tools, I enjoy building things that feel good to use. Whether it&#39;s Unity, Godot, or React—I bring ideas to life with focus and flair.
         </motion.p>
       </div>
     </section>
