@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*
+.bg-hero {
+	background-image: url();
+	background-size: cover;
+	background-position: center;
+}*/
 
-/* Optional: dark background and mono font */
-body {
-  @apply bg-black text-white font-mono;
+.bg-hero-plain {
+	
 }
