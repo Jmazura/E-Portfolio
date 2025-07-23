@@ -40,7 +40,7 @@ export default function ItchIOCard() {
     );
   }
 
-  const firstGame = games[0]; // You can loop through all if you want to show more
+  const firstGame = games[0];
 
   return (
     <Card
@@ -60,7 +60,17 @@ export default function ItchIOCard() {
     >
       <div>
         <p className="font-semibold text-azura-text">{firstGame.title}</p>
-        <p className="text-sm text-azura-muted">{firstGame.short_text ?? 'No description.'}</p>
+        <p className="text-sm text-azura-muted">
+          {firstGame.short_text ?? 'No description available.'}
+        </p>
+        <a
+          href={firstGame.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-azura-yellow text-sm hover:underline block mt-2"
+        >
+          → View Game
+        </a>
       </div>
     </Card>
   );

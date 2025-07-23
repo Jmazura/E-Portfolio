@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Image from 'next/image';
 
 interface CardProps {
   title?: string;
@@ -21,10 +24,12 @@ export default function Card({
     <div className={`w-full max-w-md bg-azura-surface text-azura-text border border-azura-border rounded-xl p-5 shadow-lg ${className}`}>
       <div className="flex items-center gap-4 mb-4">
         {imageSrc && (
-          <img
+          <Image
             src={imageSrc}
             alt="Card image"
-            className="w-12 h-12 rounded-full border border-azura-border"
+            width={48}
+            height={48}
+            className="rounded-full border border-azura-border"
           />
         )}
         <div>
@@ -33,7 +38,7 @@ export default function Card({
         </div>
       </div>
 
-      {children && <div className="text-sm space-y-2">{children}</div>}
+      <div className="text-sm space-y-2">{children}</div>
 
       {footer && <div className="mt-4">{footer}</div>}
     </div>
