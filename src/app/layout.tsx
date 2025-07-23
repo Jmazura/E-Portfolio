@@ -1,7 +1,7 @@
 import './globals.css'
 import { JetBrains_Mono } from 'next/font/google'
 import Navbar from '@/components/navbar'
-
+import Footer from '@/components/footer'
 
 const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="font-jetbrains min-h-screen bg-gradient-to-br from-azura-bg via-azura-trans to-azura-soft text-azura-text"> 
           {children}
         </div>
+        <Footer/>
       </body>
 
 
