@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* Left: Copyright */}
         <p className="text-sm text-azura-muted text-center sm:text-left">
-          &copy; {new Date().getFullYear()} Jhon Michael "Yugiboyy" Azura. All rights reserved.
+          &copy; {new Date().getFullYear()} Jhon Michael &quot;Yugiboyy&quot; Azura. All rights reserved.
         </p>
 
         {/* Right: Icon Links */}
@@ -42,7 +42,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://facebook.com/renugo08"
+            href="https://facebook.com/renugo08	"
             target="_blank"
             rel="noopener noreferrer"
             title="Facebook"

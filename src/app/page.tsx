@@ -1,6 +1,5 @@
 "use client"
 
-import styles from "./globals.css";
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
