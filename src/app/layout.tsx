@@ -1,5 +1,7 @@
 import './globals.css'
 import { JetBrains_Mono } from 'next/font/google'
+import Navbar from '@/components/navbar'
+
 
 const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
@@ -13,11 +15,18 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+
     <html lang="en" className={jetbrains.variable}>
-      <body className="font-jetbrains min-h-screen bg-gradient-to-br from-azura-bg via-azura-trans to-azura-soft text-azura-text">
-        <p> test </p>
-        {children}
+
+      
+      <body >
+        <Navbar/>
+        <div className="font-jetbrains min-h-screen bg-gradient-to-br from-azura-bg via-azura-trans to-azura-soft text-azura-text"> 
+          {children}
+        </div>
       </body>
+
+
     </html>
   )
 }
