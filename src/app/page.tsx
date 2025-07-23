@@ -2,7 +2,6 @@
 
 import { Typewriter } from 'react-simple-typewriter';
 import GithubWidget from '@/components/githubWidget';
-import ItchIOWidget from '@/components/itchIoCard';
 
 export default function Home() {
   return (
@@ -68,7 +67,6 @@ export default function Home() {
 
         <div className="flex p-4 gap-5 mt-5">
           <GithubWidget />
-          <ItchIOWidget />
         </div>
 
       </div>
