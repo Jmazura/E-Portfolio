@@ -1,13 +1,15 @@
 "use client"
 
 import { Typewriter } from 'react-simple-typewriter';
+import GithubWidget from '@/components/githubWidget';
+import ItchIOWidget from '@/components/itchIoCard';
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <div className=" mx-2 sm:mx-8 md:mx-4 flex flex-col items-center justify-center h-screen">
 
-        <div className="py-8 px-12 sm:px-4 md:px-8 text-center w-full h-fit bg-surface rounded-2xl border-2 border-green-600/40 shadow-[0_0_20px_4px_rgba(34,147,94,0.4)] animate-pulse overflow-hidden">
+        <div className="py-8 px-12 sm:px-4 md:px-8 text-center w-full bg-surface rounded-2xl border-2 border-green-600/40 shadow-[0_0_20px_4px_rgba(34,147,94,0.4)] animate-pulse overflow-hidden">
    
           <h1 className="font-bold text-2xl sm:text-5xl">
             Jhon Michael M. <span className="text-azura-yellow">Azura</span>
@@ -36,32 +38,38 @@ export default function Home() {
           <span className="text-azura-yellow">user@azura</span>:<span className="text-azura-accent">~/projects</span>
         </p>
 
-        $ <Typewriter
-            words={[
-              'echo "Hello, World!"',
-              'echo "Initializing system..."',
-              'echo "Authenticating user@azura..."',
-              'echo "Loading components █████▒▒▒▒▒▒"',
-              'echo "Access granted ✓"',
-              'echo "Fetching data from neural core..."',
-              'echo "AI says: Welcome back, Yugiboyy."',
-              'echo "cd ~/projects/zombie-survival"',
-              'echo "git commit -m \\"made it glow🔥\\""',
-              'echo "Game compiled successfully ✔"',
-              'echo "Running: npm start"',
-              'echo "Don\\\'t just code it, survive it 🧟‍♂️"',
-              'echo "Terminal online. Let\\\'s build something legendary."',
-            ]}  
-            loop={0}
-            cursor
-            cursorStyle="_"
-            typeSpeed={50}
-            deleteSpeed={0}
-            delaySpeed={1000}
-          />
+        <span className="p-2 pb-5">
+          $ <Typewriter
+              words={[
+                'echo "Hello, World!"',
+                'echo "Initializing system..."',
+                'echo "Authenticating user@azura..."',
+                'echo "Loading components █████▒▒▒▒▒▒"',
+                'echo "Access granted ✓"',
+                'echo "Fetching data from neural core..."',
+                'echo "AI says: Welcome back, Yugiboyy."',
+                'echo "cd ~/projects/zombie-survival"',
+                'echo "git commit -m \\"made it glow🔥\\""',
+                'echo "Game compiled successfully ✔"',
+                'echo "Running: npm start"',
+                'echo "Don\\\'t just code it, survive it 🧟‍♂️"',
+                'echo "Terminal online. Let\\\'s build something legendary."',
+              ]}  
+              loop={0}
+              cursor
+              cursorStyle="_"
+              typeSpeed={50}
+              deleteSpeed={0}
+              delaySpeed={1000}
+            />
+        </span>
 
         </div>
 
+        <div className="flex p-4 gap-5 mt-5">
+          <GithubWidget />
+          <ItchIOWidget />
+        </div>
 
       </div>
     </main>
