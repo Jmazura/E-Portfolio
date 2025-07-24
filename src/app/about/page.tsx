@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
 	
-	return (
+		return (
 
 		<main className="h-screen flex text-center items-center justify-center gap-4">
 			
