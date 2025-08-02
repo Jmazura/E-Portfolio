@@ -33,7 +33,7 @@ export default function Card({
 
       {/* Title + Subtitle */}
       <span className="justify-between items-center text-left text-2xl">
-        <h1 className="title font-bold">{title}</h1>
+        <h1 className="title font-bold text-base sm:text-xl md:8xl">{title}</h1>
         <h6 className="text-base subtitle text-[var(--color-highlight)]">{subtitle}</h6>
       </span>
 

@@ -14,7 +14,7 @@
 }
 
 nav {
-  @apply relative flex items-center justify-between p-2 bg-[var(--color-surface)] border-b border-[var(--color-border)];
+  @apply relative flex items-center justify-between px-2 bg-[var(--color-surface)] border-b border-[var(--color-border)];
 
   .navbar-logo {
     @apply text-lg font-bold text-[var(--color-text-primary)];
@@ -26,9 +26,7 @@ nav {
 
   .navbar-toggle {
     @apply bg-black;
-    @apply px-2 block text-xl text-[var(--color-text-primary)] sm:hidden transition-transform duration-500 ease-in-out; 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    @apply m-1 px-2 block text-sm text-[var(--color-text-primary)] sm:hidden transition-transform duration-500 ease-in-out; 
   }
 
   .navbar-links {
@@ -59,7 +57,7 @@ nav {
 	nav .navbar-toggle:hover{
 		@apply rounded-sm;
 		box-shadow: 0 1px 10px #fff;
-		transform: scale(1.25);
+		transform: scale(1.025);
 	}
 }
 

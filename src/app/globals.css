@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -77,6 +76,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-mono);
+
+  @apply text-sm sm:text-base md:text-2xl;
 }
 
 .page-container{
@@ -88,7 +89,7 @@ body {
 }
 
 section{
-  @apply m-2 mt-4 p-4 w-full gap-4 items-center justify-between;
+  @apply mt-4 p-4 w-full gap-4 items-center justify-between;
   @apply border border-[var(--color-border)];
   @apply rounded-2xl;
   @apply transition transition-transform duration-500 shadow ease-in-out;

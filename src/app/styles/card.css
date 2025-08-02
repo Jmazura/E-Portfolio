@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 .card {; 
-	@apply tracking-tight;
-  @apply m-4 min-w-[230px] max-w-[350px] w-full sm:w-[380px] lg:min-w-[1000px];
+  @apply tracking-tight;
+  @apply mx-0 mt-4 min-w-[230px] max-w-[350px] w-full sm:w-[380px] lg:min-w-[1000px];
   @apply p-6 rounded-4xl;
   @apply border border-[var(--color-border)];
 	@apply transition transition-transform duration-1000 ease-in-out;

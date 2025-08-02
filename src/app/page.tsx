@@ -27,7 +27,7 @@ export default function Home() {
         <span className="text-cyan-400 inline">~/&gt; </span>PROJECTS
       </h1>
 
-      <span className="flex flex-wrap justify-center">
+      <span className="flex flex-wrap justify-center mx-0">
         <Card 
           title="Undead Academia"
           imgurl="/images/undeadAcademia.png"
