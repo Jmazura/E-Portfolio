@@ -1,10 +1,7 @@
 'use client'
-import Card from './components/Card'
-import { useState } from 'react';
-
+import Card from './components/Card';
 
 export default function Home() {
-  const [view, setView] = useState("grid");
 
   return (
     <div className="content-container">
