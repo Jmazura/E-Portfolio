@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          rel="stylesheet"
+          rel="preconnect"
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
         />
       </head>

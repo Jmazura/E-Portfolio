@@ -9,15 +9,15 @@ export default function Home() {
       <section className="hoverable">
         <h1>The Process of Failure</h1>
         <p className="mt-4">
-          Failure isn't the opposite of success — it's a step toward it. Every misstep, every rejection, and every false start refines our direction. It's not the end, but the process of becoming sharper, more focused, and more resilient.
+          Failure isn't the opposite of success — it's a step toward it. Every misstep&apos; every rejection&apos; and every false start refines our direction. It's not the end&apos; but the process of becoming sharper&apos; more focused&apos; and more resilient.
         </p>
 
         <blockquote className="mt-6 italic text-gray-500 border-l-4 pl-4 border-cyan-400">
-          “You don’t learn to walk by following rules. You learn by doing, and by falling over.” – Richard Branson
+          “You don’t learn to walk by following rules. You learn by doing&apos; and by falling over.” – Richard Branson
         </blockquote>
 
         <p className="mt-4">
-          Embracing failure is embracing growth. Reflect, adapt, and try again — because progress is forged in the fire of persistence.
+          Embracing failure is embracing growth. Reflect&apos; adapt&apos; and try again — because progress is forged in the fire of persistence.
         </p>
       </section>
 

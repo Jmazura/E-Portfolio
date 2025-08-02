@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 import '../styles/navbar.css'
 
@@ -8,9 +9,9 @@ export default function Navbar() {
   return (
     <nav>
 
-      <a href="/" className="navbar-logo">
+      <Link href="/" className="navbar-logo">
         Jm <span className="highlight">Azura</span>
-      </a>
+      </Link>
 
       <button className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰
@@ -18,9 +19,9 @@ export default function Navbar() {
 
       
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <a className="alink" href="/"><span className={`block sm:hidden inline text-cyan-400 font-bold`}>~/&gt; </span>Home</a>
-        <a className="alink" href="/about"><span className={`block sm:hidden  inline text-cyan-400 font-bold`}>~/&gt; </span>About</a>
-        <a className="alink" href="/contact"><span className={`block sm:hidden  inline text-cyan-400 font-bold`}>~/&gt; </span>Contact</a>
+        <Link className="alink" href="/"><span className={`block sm:hidden inline text-cyan-400 font-bold`}>~/&gt; </span>Home</Link>
+        <Link className="alink" href="/about"><span className={`block sm:hidden  inline text-cyan-400 font-bold`}>~/&gt; </span>About</Link>
+        <Link className="alink" href="/contact"><span className={`block sm:hidden  inline text-cyan-400 font-bold`}>~/&gt; </span>Contact</Link>
       </div>
     </nav>
   )
