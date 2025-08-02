@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-bg: #040404;
+  --color-surface: #090909;
+  --color-border: #2c2c2c;
+
+  --color-text-primary: #f5f5f5;
+  --color-text-muted: #a3a3a3;
+
+  --color-highlight: #facc15;
+  --color-link: #16a34a;
+  --color-link-hover: #158C40;
+
+  --color-btn-bg: #f4f4f4;
+  --color-btn-text: var(--color-bg);
+  --color-btn-hover: #f4f4f4;
+  --color-btn-bg-hover: #f4f4f4;
+
+  --color-heading: var(--color-highlight);
+  --color-navbar-title: var(--color-highlight);
+
+  --color-white: #f4f4f4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@keyframes typewriter {
+  0% {
+    clip-path: inset(0 75% 0 0);
+  }
+  25%{
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  animation: typewriter 5s steps(15) infinite,
+              blink 0.7s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-bg);
+    --foreground: #fff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+}
+
+.page-container{
+  @apply m-2 p-4;
+}
+
+.content-container{
+  @apply w-full flex flex-col gap-4 p-4 items-center;
+}
+
+section{
+  @apply p-4 w-full gap-4 items-center justify-between;
+  @apply border border-[var(--color-border)];
+  @apply rounded-2xl;
+  @apply transition transition-transform duration-500 shadow ease-in-out;
+  &.hoverable:hover{
+    box-shadow: 0 1px 15px #fafafa;
+    transform: scale(1.025);
+  }
+}

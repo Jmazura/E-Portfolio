@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@keyframes fade {
+  0%{
+    height: 0px;
+  }
+  50% {
+    height: 50px;
+  }
+
+  100%{
+    height: 100px;
+  } 
+}
+
+nav {
+  @apply relative flex items-center justify-between p-2 bg-[var(--color-surface)] border-b border-[var(--color-border)];
+
+  .navbar-logo {
+    @apply text-lg font-bold text-[var(--color-text-primary)];
+
+    .highlight {
+      @apply text-[var(--color-highlight)];
+    }
+  }
+
+  .navbar-toggle {
+    @apply bg-black;
+    @apply px-2 block text-xl text-[var(--color-text-primary)] sm:hidden transition-transform duration-500 ease-in-out; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-links {
+  @apply border-t border-[var(--color-border)] sm:border-t-0;
+  @apply absolute left-0 top-full w-full flex-col bg-[var(--color-surface)] p-4 gap-2 hidden sm:static sm:flex sm:flex-row sm:items-center sm:p-0 sm:w-auto;
+
+  &.open {
+    @apply flex;
+    animation: fade 150ms ease-in-out;
+
+  }
+
+  & .alink {
+    @apply rounded-md font-thin;
+    @apply border sm:border-0 border-[var(--color-border)] transition transition-transform duration-500 ease-in-out;
+    @apply text-[var(--color-text-primray)] px-2 py-1 hover:text-[var(--color-link-hover)];
+	 /*text-00aa22*/
+  }
+
+  }
+}
+
+@media (max-width: 640px) {
+	nav .alink:hover {
+			box-shadow: 0 1px 10px #fff;
+			transform: scale(1.05);
+	}
+	nav .navbar-toggle:hover{
+		@apply rounded-sm;
+		box-shadow: 0 1px 10px #fff;
+		transform: scale(1.25);
+	}
+}
+

@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+.card {; 
+	@apply tracking-tight;
+  @apply m-4 min-w-[230px] max-w-[350px] w-full sm:w-[380px] lg:min-w-[1000px];
+  @apply p-6 rounded-4xl;
+  @apply border border-[var(--color-border)];
+	@apply transition transition-transform duration-1000 ease-in-out;
+
+  &:hover{
+		box-shadow: 0 1px 15px #fff;
+		transform: scale(1.025);
+	}
+}
+
+
+button{
+	@apply my-6;
+	@apply bg-[rgb(245,245,245)] text-black;
+	@apply border border-[var(--color-text-primary)] rounded-2xl p-2;
+	@apply transition transition-transform duration-1000 ease-in-out;
+		
+	&:hover{
+		box-shadow: 0 1px 15px #fff;
+		transform: scale(1.025);
+	}
+	&:active{
+		box-shadow: 0 1px 15px #fff;
+		transform: scale(1.1);
+	}
+}

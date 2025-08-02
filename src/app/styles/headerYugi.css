@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: #22c55e; /* green-500 */
+    box-shadow: 0 0 0px #22c55e;
+  }
+  50% {
+    border-color: #86efac; /* green-300 */
+    box-shadow: 0 0 15px #86ef86;
+  }
+}
+
+header{
+	animation: borderPulse 1.5s ease-in-out infinite;
+	@apply bg-[var(--color-surface)] rounded-4xl font-bold ;
+	@apply border border-green-400 mx-8 sm:mx-24 md:mx-28 lg:mx-48 pt-6;
+	text-align: center;
+	& a{
+		@apply text-2xl sm:text-4xl md:text-6xl tracking-tight;
+	}
+	
+}
+
+.mini-icons {
+	@apply p-4 flex items-center justify-center gap-4 mt-auto;
+	a{
+		padding: 0.500rem;
+		@apply border rounded-lg w-10 h-10 justify-center items-center;
+		@apply transition transition-transform duration-1000 ease-in-out;
+	
+
+	}
+
+	a:hover{
+			transform: scale(1.050);
+	}
+
+}
+
+.foot{
+	padding: 0px;
+}
+
+.fb{
+	@apply text-blue-400;
+}
+
+.twit{
+	@apply text-sky-400;
+}
+
+.git{
+	@apply text-white;
+}
+
+.itch{
+	@apply text-pink-400;	
+}
+
+.fb:hover{
+	@apply shadow-[0_1px_15px] shadow-blue-400;	
+}
+
+.twit:hover{
+	@apply shadow-[0_1px_15px] shadow-sky-400;	
+}
+
+.git:hover{
+	@apply shadow-[0_1px_15px] shadow-white;	
+}
+
+.itch:hover{
+	@apply shadow-[0_1px_15px] shadow-pink-400;		
+}
