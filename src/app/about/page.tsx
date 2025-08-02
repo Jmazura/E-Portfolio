@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-highlight)]">About Me</h1>
 
       <p className="text-lg text-gray-300 mb-6">
-        Hey, I'm <span className="text-cyan-400">Jhon Michael Azura</span> — better known online as <span className="text-pink-400">Yugiboyy</span>. I build things, break things, fix them better, and repeat. That’s how I learn.
+        Hey, I&apos;m <span className="text-cyan-400">Jhon Michael Azura</span> — better known online as <span className="text-pink-400">Yugiboyy</span>. I build things, break things, fix them better, and repeat. That’s how I learn.
       </p>
 
       <p className="text-gray-400 mb-6">
@@ -15,7 +15,7 @@ export default function About() {
         My main focus right now is frontend development. I build with <span className="text-blue-400">Next.js</span> and <span className="text-green-400">Tailwind CSS</span>, and I work on <span className="text-lime-300">Linux Mint</span> using <span className="text-purple-300">Sublime Text</span>. I don’t use bloated setups — just what works and runs fast.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4 text-white">What I'm Up To</h2>
+      <h2 className="text-2xl font-semibold mt-10 mb-4 text-white">What I&apos;m Up To</h2>
       <ul className="text-left text-gray-300 list-disc list-inside space-y-2">
         <li>🎮 Building a 2D zombie survival game in Godot — slow-paced, item-driven, heart-pounding</li>
         <li>💘 Developing an RPG dating sim — story-rich, choice-based, character-focused</li>
