@@ -1,6 +1,18 @@
 'use client'
 import '../styles/card.css';
 import Image from "next/image";
+import React from "react";
+
+type CardProps = {
+  title: string;
+  subtitle?: string;
+  date?: string;
+  description?: string;
+  buttonText?: string;
+  url?: string;
+  imgurl?: string;
+  dev?: string;
+};
 
 export default function Card({
   title,
@@ -10,8 +22,8 @@ export default function Card({
   buttonText = 'Continue →',
   url = "https://www.example.com/",
   imgurl = "/images/no-image.jpg",
-  dev = "Developers: None"
-}) {
+  dev = "Developers: None",
+}: CardProps) {
   return (
     <div className="card">
       {/* Date */}
