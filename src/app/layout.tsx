@@ -3,7 +3,12 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeaderYugi from "./components/HeaderYugi";
+import { JetBrains_Mono } from "next/font/google"; // ✅ Import font
 
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Jm Azura",
@@ -16,22 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-        />
-      </head>
+    <html lang="en" className={jetBrainsMono.className}>
       <body className="min-h-screen flex flex-col">
         <main className="flex-2">
-          <Navbar/>
+          <Navbar />
           <div className="page-container">
-            <HeaderYugi/>
+            <HeaderYugi />
             {children}
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
