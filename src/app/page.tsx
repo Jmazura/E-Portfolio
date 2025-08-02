@@ -19,6 +19,10 @@ export default function Home() {
         </p>
       </section>
 
+      <section>
+
+      </section>
+
       <h1 className="typewriter text-4xl mt-4 font-bold text-[var(--color-highlight)]">
         <span className="text-cyan-400 inline">~/&gt; </span>PROJECTS
       </h1>

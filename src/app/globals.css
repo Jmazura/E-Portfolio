@@ -88,7 +88,7 @@ body {
 }
 
 section{
-  @apply p-4 w-full gap-4 items-center justify-between;
+  @apply m-2 mt-4 p-4 w-full gap-4 items-center justify-between;
   @apply border border-[var(--color-border)];
   @apply rounded-2xl;
   @apply transition transition-transform duration-500 shadow ease-in-out;
