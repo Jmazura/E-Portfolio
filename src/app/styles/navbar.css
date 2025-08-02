@@ -14,7 +14,7 @@
 }
 
 nav {
-  @apply relative flex items-center justify-between px-2 bg-[var(--color-surface)] border-b border-[var(--color-border)];
+  @apply my-1 relative flex items-center justify-between px-2 bg-[var(--color-surface)] border-b border-[var(--color-border)];
 
   .navbar-logo {
     @apply text-lg font-bold text-[var(--color-text-primary)];

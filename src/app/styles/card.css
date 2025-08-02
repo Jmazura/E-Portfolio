@@ -2,7 +2,7 @@
 
 .card {; 
   @apply tracking-tight;
-  @apply mx-0 mt-4 min-w-[230px] max-w-[350px] w-full sm:w-[380px] lg:min-w-[1000px];
+  @apply mx-1 lg:mx-4 mt-4 min-w-[230px] max-w-[350px] w-full sm:w-[380px] lg:min-w-[350px] lg:max-w-[450px];
   @apply p-6 rounded-4xl;
   @apply border border-[var(--color-border)];
 	@apply transition transition-transform duration-1000 ease-in-out;
